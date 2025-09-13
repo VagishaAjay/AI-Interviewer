@@ -1,0 +1,169 @@
+/* Global Theme Styles */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #93bbb5;
+}
+
+.home-wrapper {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #448477;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #55ab9a;
+}
+
+.theme-toggle {
+  background: #448477;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.theme-toggle:hover {
+  background-color: #55ab9a;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #5d5c5c;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #318b79;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #55ab9a;
+}
+
+/* Features Section */
+.features {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(160, 36, 36, 0.05);
+  transition: transform 0.2s;
+  width: 300px;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* How It Works Section */
+.how-it-works {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.how-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.how-card {
+  background-color: #eef2ff;
+  border-left: 6px solid #318b79;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 250px;
+  text-align: left;
+}
+
+.how-card strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #318b79;
+}
+
+.how-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
