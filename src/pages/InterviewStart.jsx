@@ -26,15 +26,19 @@ function InterviewStart({ darkMode }) {
   }, []);
 
   const handleNext = () => {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setAnswer('');
-      setTime(0);
-    } else {
-      alert('Interview complete!');
-      navigate('/');
-    }
-  };
+  if (currentIndex < questions.length - 1) {
+    setCurrentIndex(currentIndex + 1);
+    setAnswer('');
+    setTime(0);
+  } else {
+    navigate('/result', {
+  state: {
+    score: 8.5,
+    analysis: 'Your answers were clear and well-articulated...',
+  }
+});
+  }
+};
 
   const handleEnd = () => {
     if (window.confirm('Are you sure you want to end the interview early?')) {
