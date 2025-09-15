@@ -6,6 +6,7 @@ import Interview from './pages/Interview';
 import Guidelines from './pages/Guidelines';
 import Setup from './pages/Setup';
 import InterviewStart from './pages/InterviewStart';
+import Result from './pages/Result';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/guidelines" element={<Guidelines />} />
       <Route path="/setup" element={<Setup />} />
       <Route path="/interview-start" element={<InterviewStart />} />
+      <Route path="/result" element={<Result />} />
     </Routes>
   );
 }
